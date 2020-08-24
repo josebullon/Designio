@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Poppins');
+*,body {
+    margin:0;
+    padding:0;
+}
+body,html{
+    height:100%;
+    width:100%;
+}
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:inherit;
+}
+h1{
+    text-align:center;
+    background-color:rgb(10, 76, 151);
+    color:rgb(255, 255, 255);
+    font-family:'Poppins';
+    flex:1;
+}
+.row{
+    background-color:rgb(13, 14, 15);
+    flex:5;
+}
+.row:nth-child(2n+1){
+    background-color: rgb(101, 107, 115);
+}
+.row ul{
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type:none;
+    align-items:center;
+    height:70%;
+    color:rgb(255, 255, 255);
+}
+#yokeissa ul li a .fa {
+    font-size:24px;
+    color:rgb(38, 38, 38);
+    line-height:40px;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+#yokeissa ul li a {
+    position:relative;
+    margin:0 5px;
+    display:block;
+    width:40px;
+    height:40px;
+    border-radius:2px 4px 2px 0px;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    transform:perspective(1000px) rotate(-20deg) skew(25deg) translate(0,0);
+    -webkit-transform:perspective(1000px) rotate(-20deg) skew(25deg) translate(0,0);
+    -moz-transform:perspective(1000px) rotate(-20deg) skew(25deg) translate(0,0);
+    -o-transform:perspective(1000px) rotate(-20deg) skew(25deg) translate(0,0);
+    box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -moz-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    -o-box-shadow:-10px 10px 10px rgba(0,0,0,0.5);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+#yokeissa ul li a:before{
+    content:"";
+    position:absolute;
+    top:5px;
+    left:-10px;
+    height:100%;
+    width:10px;
+    border-radius:2px 2px 0px 0px;
+    background-color:rgb(177, 177, 177);
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewY(-45deg);
+    -moz-transform:rotate(0deg) skewY(-45deg);
+    -o-transform:rotate(0deg) skewY(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+#yokeissa ul li a:after{
+    content:"";
+    position:absolute;
+    bottom:-10px;
+    right:5px;
+    height:10px;
+    width:100%;
+    border-radius:2px 2px 2px 0px;
+    background-color:rgb(177, 177, 177);
+    transform:rotate(0deg) skewX(-45deg);
+    -webkit-transform:rotate(0deg) skewX(-45deg);
+    -moz-transform:rotate(0deg) skewX(-45deg);
+    -o-transform:rotate(0deg) skewX(-45deg);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+}
+#yokeissa ul li a:hover{
+    transform:perspective(1000px) rotate(-20deg) skew(25deg) translate(10px,-10px);
+    -webkit-transform:perspective(1000px) rotate(-20deg) skew(25deg) translate(10px,-10px);
+    -moz-transform:perspective(1000px) rotate(-20deg) skew(25deg) translate(10px,-10px);
+    -o-transform:perspective(1000px) rotate(-20deg) skew(25deg) translate(10px,-10px);
+    box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -webkit-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -moz-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    -o-box-shadow:-30px 30px 30px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+#yokeissa ul li:hover .fa{color:rgb(255, 255, 255);
+}
+#yokeissa ul li:hover:nth-child(1) a{
+    background-color:rgb(59, 89, 153);
+}
+#yokeissa ul li:hover:nth-child(2) a{
+    background:rgb(221, 75, 57);
+}
+#yokeissa ul li:hover:nth-child(3) a{
+    background:-webkit-radial-gradient(circle farthest-corner at 35% 90%,
+        rgb(254, 197, 100), rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(circle farthest-corner at 0 140%,
+        rgb(254, 197, 100), rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 0 -25%,
+        rgb(82, 88, 207),   rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 20% -50%,
+        rgb(82, 88, 207),   rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 0,
+        rgb(137, 61, 194),  rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 60% -20%,
+        rgb(137, 61, 194),  rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 100%,
+        rgb(217, 49, 122),  rgba(0, 0, 0, 0)), -webkit-linear-gradient(
+            rgb(101, 89, 202),
+            rgb(187, 48, 143) 30%,
+            rgb(227, 63, 95) 50%,
+            rgb(247, 118, 56) 70%,
+            rgb(254, 198, 109) 100%);
+    background: radial-gradient(circle farthest-corner at 35% 90%,
+        rgb(254, 197, 100), rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 140%,
+        rgb(254, 197, 100), rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0 -25%,
+        rgb(82, 88, 207),   rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 20% -50%,
+        rgb(82, 88, 207),   rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 0,
+        rgb(137, 61, 194),  rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 60% -20%,
+        rgb(136, 61, 194),  rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 100%,
+        rgb(217, 49, 122),  rgba(0, 0, 0, 0)), linear-gradient(
+            rgb(101, 89, 202),
+            rgb(188, 49, 143) 30%,
+            rgb(227, 63, 95) 50%,
+            rgb(247, 118, 56) 70%,
+            rgb(254, 198, 109) 100%);
+}
+#yokeissa ul li:hover:nth-child(4) a{
+    background-color:rgb(85, 172, 238);
+}
+#yokeissa ul li:hover:nth-child(5) a{
+    background-color:rgb(0, 123, 181);
+}
+#yokeissa ul li:hover:nth-child(1) a:before{
+    background-color:rgb(46, 74, 134);
+    }
+#yokeissa ul li:hover:nth-child(2) a:before{
+    background:rgb(193, 57, 41);
+}
+#yokeissa ul li:hover:nth-child(3) a:before{
+    background-color:rgb(208, 45, 76);
+}
+#yokeissa ul li:hover:nth-child(4) a:before{
+    background-color:rgb(65, 132, 183);
+}
+#yokeissa ul li:hover:nth-child(5) a:before{
+    background-color:rgb(18, 86, 136);
+}
+#yokeissa ul li:hover:nth-child(1) a:after{
+    background-color:rgb(74, 105, 173);
+}
+#yokeissa ul li:hover:nth-child(2) a:after{
+    background:rgb(232, 67, 47);
+}
+#yokeissa ul li:hover:nth-child(3) a:after{
+    background-color:rgb(241, 57, 92);
+}
+#yokeissa ul li:hover:nth-child(4) a:after{
+    background-color:rgb(77, 155, 222);
+}
+#yokeissa ul li:hover:nth-child(5) a:after{
+    background-color:rgb(85, 172, 238);
+}

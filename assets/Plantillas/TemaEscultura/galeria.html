@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">     
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">   <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>GALERIA</title>
+</head>
+
+<body class="gallery-page">
+
+    <div class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="main-page">
+                    <aside class="main-navigation">
+                        <div class="main-menu">
+
+                            <div class="menu-container">
+                                <div class="block-keep-ratio block-keep-ratio-2-1 block-width-full home">                                    
+                                    <a href="principal.html" class="block-keep-ratio__content  main-menu-link">
+                                        <span class="main-menu-link-text">
+                                            PRINCIPAL    
+                                        </span>                                        
+                                    </a>
+                                </div>                                
+                            </div>
+
+                            <div class="menu-container">                                
+                                <div class="block-keep-ratio  block-keep-ratio-1-1  block-width-half  pull-left  about-main">                                    
+                                    <a href="nosotros.html" class="main-menu-link about block-keep-ratio__content flexbox-center">
+                                        <i class=" main-menu-link-icon">
+                                        <img src="images/usuario.ico"      style="width:70px"></i>
+                                        NOSOTROS
+                                    </a>                                    
+                                </div>
+
+                                <div class="block-keep-ratio  block-keep-ratio-1-1  block-width-half  pull-right  contact-main">
+                                    <a href="contactanos.html" class="main-menu-link contact block-keep-ratio__content flexbox-center">
+                                        <i class=" main-menu-link-icon">
+                                        <img src="images/telefono.ico"      style="width:70px"></i>
+                                        CONTACTANOS
+                                    </a>                                
+                                </div>    
+                            </div>    
+
+                            <div class="menu-container">
+                                <div class="block-keep-ratio block-keep-ratio-1-1 block-keep-ratio-md-2-1 block-width-full gallery">                                    
+                                    <a href="galeria.html" class="main-menu-link contact block-keep-ratio__content flexbox-center">
+                                        <span class="main-menu-link-icon">
+                                            <img src="images/galeria.ico"      style="width:100px"></i>
+                                            GALERIA   
+                                        </span>                                            
+                                    </a>                                    
+                                </div>                                
+                            </div>
+                        </div> <!-- main-menu -->
+                    </aside> <!-- main-navigation -->
+
+                    <!-- content-main -->
+                    <div class="content-main gallery_main">
+
+                        <div class="gallery-main-inner">
+                            
+                            <div class="col-md-12 gallery_title_main">
+                                <div class="gallery_title">
+                                    <h3>GALERIA</h3>
+                                    <h4>NUESTRAS OBRAS...</h4>
+                                </div><br style="clear:both;"/>
+                            </div>
+
+                            <div id="content" class="gallery-images-container">
+                                <div class="box-gutter"></div>
+                                <div class="box-sizer"></div>
+                                <div class="box">
+                                    <a href="images/galeria1.jpg"><img alt="Agra picture" src="images/galeria1.jpg"></a>
+                                </div>
+                                <div class="box">
+                                    <a href="images/galeria2.jpg"><img alt="Agra picture" src="images/galeria2.jpg"></a>
+                                </div>
+                                <div class="box">
+                                    <a href="images/galeria3.jpg"><img alt="Agra picture" src="images/galeria3.jpg"></a>
+                                </div>
+                                <div class="box">
+                                    <a href="images/galeria4.jpg"><img alt="Agra picture" src="images/galeria4.jpg"></a>
+                                </div>
+                                <div class="box">
+                                    <a href="images/galeria5.jpg"><img alt="Agra picture" src="images/galeria5.jpg"></a>
+                                </div>
+                              
+                                <div class="box">
+                                    <a href="images/galeria8.jpg"><img alt="Agra picture" src="images/galeria8.jpg"></a>
+                                </div>
+                            </div>                
+
+                            <div class="row text-center view_more_main">
+                               <a href="#" class="btn view_more">Ver mas</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+            <footer class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
+                    <p class="copyright">Front_End Developer @Yokeissa.blogspot.com</p>
+                </div>    
+            </footer>  <!-- .row -->   
+
+        </div> <!-- .container -->
+    </div>  <!-- .main-body -->
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/imagesloaded.3.1.8.min.js"></script>
+    <script src="js/jquery.masonry.3.2.1.min.js"></script> <!-- http://masonry.desandro.com/ -->
+    <script src="js/jquery.magnific-popup.min.js"></script> <!-- http://dimsemenov.com/plugins/magnific-popup/ -->
+
+    <script>
+        function init_masonry(){
+          var $container = $('#content');
+
+          $container.imagesLoaded( function(){
+              $container.masonry({
+                itemSelector: '.box',
+                isAnimated: true
+            });
+          });
+        }
+
+        $(document).ready(function(){
+            
+            //Init jQuery Masonry layout
+            init_masonry();
+
+            // Magnific Popup
+            $('.gallery-images-container').magnificPopup({
+                delegate: 'a', // child items selector, by clicking on it popup will open
+                type: 'image',
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                },
+            });
+
+            //Select menu onchange
+            $("#collapsed-navbar").change(function () {
+                window.location = $(this).val();
+            });
+        
+        });
+    </script>
+
+</body>
+</html>

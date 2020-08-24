@@ -1,0 +1,46 @@
+body {
+    font-weight: 300;
+}
+/* Necessary for full page carousel*/
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+/* Carousel */
+.carousel,
+.carousel-item,
+.carousel-item.active {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item:nth-child(1) {
+  background-image: url("../img/07.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(2) {
+  background-image: url("../img/08.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.carousel-item:nth-child(3) {
+  background-image: url("../img/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*Caption*/
+@media (min-width: 776px) {
+    .carousel .view ul li {
+        display: inline;
+    }
+    .carousel .view .full-bg-img ul li .flex-item {
+        margin-bottom: 1.5rem;
+    }
+}

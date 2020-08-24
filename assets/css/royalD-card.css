@@ -1,0 +1,62 @@
+.card{
+    border-radius: 12px;
+    background: rgb(242, 151, 32);
+}
+.header-area.img1{    background-image: url(../img/CodigoFormulario001.png);}
+.header-area.img2{    background-image: url(../img/CodigoLoading001.png);}
+.header-area.img3{    background-image: url(../img/CodigoLoading002.png);}
+.header-area.img4{    background-image: url(../img/CodigoLoading003.png);}
+.header-area.img5{    background-image: url(../img/CodigoLoading004.png);}
+.header-area.img6{    background-image: url(../img/CodigoLoading005.png);}
+.header-area.img7{    background-image: url(../img/CodigoLogin001.png);}
+.header-area.img8{    background-image: url(../img/CodigoLogin002.png);}
+.header-area.img9{    background-image: url(../img/CodigoMenu001.png);}
+.header-area.img10{    background-image: url(../img/CodigoMenu002.png);}
+.header-area.img11{    background-image: url(../img/CodigoRS001.png);}
+.header-area.img12{    background-image: url(../img/CodigoRS002.png);}
+.header-area.img13{    background-image: url(../img/CodigoRS003.png);}
+.header-area.img14{    background-image: url(../img/CodigoRS004.png);}
+.header-area.img15{    background-image: url(../img/CodigoReloj001.png);}
+.header-area.img16{    background-image: url(../img/CodigoReloj002.png);}
+.header-area.img17{    background-image: url(../img/CodigoReloj003.png);}
+.header-area.img18{    background-image: url(../img/CodigoReloj004.png);}
+.header-area.img19{    background-image: url(../img/CodigoReloj005.png);}
+.header-area{
+    border-radius: 10px 10px 50% 0;
+    padding: 120px 30px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+.body-area{
+    padding: 10px 30px;
+}
+.body-area h3{
+    margin: 0;
+    font-family: big john;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+.body-area h4{
+    color: rgb(220, 20, 60);
+    font-size: 18px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-family: roboto;
+}
+.pro-text{
+    font-family: merienda;
+    text-align: justify;
+}
+.body-area p i{
+    padding-right: 20px;
+}
+.btn-royal button{
+    border-radius: 12px;
+    margin: 8px 6px;
+}
+/* Color Blanco del Sub*/
+a:link, a:visited, a:active{
+    color:#ffffff;
+    text-decoration:none;
+}

@@ -1,0 +1,87 @@
+.box{
+position: relative;
+height: 400px;
+background-color: rgb(47, 68, 141);
+color: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid rgb(0, 0, 0);
+}
+.box::before{
+content:'';
+position: absolute;
+top: -2px;
+right: -2px;
+bottom: -2px;
+left: -2px;
+transform: skew(2deg,2deg);
+z-index: -1;
+}
+.box:nth-child(1)::before{
+background:linear-gradient(315deg,rgb(255, 165, 0),rgb(255, 0, 0));
+}
+.box:nth-child(2)::before{
+background:linear-gradient(315deg,rgb(255, 255, 255),rgb(255, 255, 0));
+}
+.box:nth-child(3)::before{
+background:linear-gradient(315deg,rgb(2, 154, 255),rgb(12, 245, 206));
+}
+.box:nth-child(4)::before{
+background:linear-gradient(315deg,rgb(240, 11, 183),rgb(107, 47, 247));
+}
+.content{
+padding: 20px;
+}
+.content .water_mark{
+position: absolute;
+font-size: 150px;
+top: 50px;
+left: 80px;
+color: rgb(85, 107, 47);
+opacity: 0;
+transition: all .5s;
+visibility: hidden;
+}
+.box:hover .water_mark{
+top: -90px;
+opacity: .9;
+visibility: visible;
+}
+.content .ajin{
+margin: 0 0 10px;
+padding: 0;
+font-size: 24px;
+color: rgb(255, 255, 255);
+}
+.chilen{
+margin: 0;
+padding: 0;
+color: rgb(255, 255, 255);
+font-size: 16px;
+}
+.salam{
+margin: 0;
+text-decoration: none;
+color: rgb(255, 255, 255);
+font-size: 20px;
+letter-spacing: 2px;
+border: 1px solid rgb(255, 255, 255);
+padding: 10px 20px;
+position: absolute;
+top: 200px;
+opacity: 0;
+visibility: hidden;
+transition: all .5s;
+border-radius: 9px;
+}
+.box:hover .salam{
+opacity: 1;
+visibility: visible;
+top: 300px;
+}
+.salam:hover{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+border-radius: 28px;
+}

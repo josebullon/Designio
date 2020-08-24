@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700|Poppins');
+*,body {
+    margin:0;
+    padding:0;
+}
+body,html{
+    height:100%;
+    width:100%;
+}
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:inherit;
+}
+h1{
+    text-align:center;
+    background-color:rgb(10, 76, 151);
+    color:rgb(255, 255, 255);
+    font-family:'Poppins';
+    flex:1;
+}
+.row{
+    background-color:rgb(13, 14, 15);
+    flex:5;
+}
+.row:nth-child(2n+1){
+    background-color: rgb(101, 107, 115);
+}
+.row ul{
+    display:flex;
+    justify-content:space-evenly;
+    list-style-type:none;
+    align-items:center;
+    height:70%;
+    color:rgb(255, 255, 255);
+}
+#yokeissa ul li a{
+    position:relative;
+    text-align:center;
+    display:block;
+    font-size:30px;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    background-color:rgb(255, 255, 255);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    border-radius:50%;
+    border:3px solid rgb(255, 255, 255);
+    overflow:hidden;
+    z-index:1;
+}
+#yokeissa ul li a .fa{
+    color:rgb(38, 38, 38);
+    position:relative;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    z-index:3;
+}
+#yokeissa ul li a:hover .fa{
+    color:rgb(255, 255, 255);
+    transform:rotateY(360deg);
+    -webkit-transform:rotateY(360deg);
+    -moz-transform:rotateY(360deg);
+    -o-transform:rotateY(360deg);
+    cursor:pointer;
+}
+#yokeissa ul li a:before{
+    content:"";
+    position:absolute;
+    top:0%;
+    right:100%;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color:rgb(255, 99, 71);
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -o-transition:.5s;
+    z-index:2;
+    transform:scale(0);
+    -webkit-transform:scale(0);
+    -moz-transform:scale(0);
+    -o-transform:scale(0);
+}
+#yokeissa ul li a:hover:before{
+    right:0%;
+    transform:scale(1);
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -o-transform:scale(1);
+    
+}
+#yokeissa ul li:nth-child(1) a:before{
+    background-color:rgb(59, 89, 153);
+}
+#yokeissa ul li:nth-child(2) a:before{
+    background-color:rgb(221, 75, 57);
+}
+#yokeissa ul li:nth-child(3) a:before{
+    background:-webkit-radial-gradient(circle farthest-corner at 35% 90%, 
+        rgb(254, 197, 100), rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(circle farthest-corner at 0 140%, 
+        rgb(254, 197, 100), rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 0 -25%, 
+        rgb(82, 88, 207),   rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 20% -50%, 
+        rgb(82, 88, 207),   rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 0, 
+        rgb(137, 61, 194),  rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 60% -20%, 
+        rgb(137, 61, 194),  rgba(0, 0, 0, 0) 50%), -webkit-radial-gradient(ellipse farthest-corner at 100% 100%, 
+        rgb(217, 49, 122),  rgba(0, 0, 0, 0)), -webkit-linear-gradient(
+            rgb(101, 89, 202), 
+            rgb(188, 49, 143) 30%, 
+            rgb(227, 63, 95) 50%, 
+            rgb(247, 118, 56) 70%, 
+            rgb(254, 198, 109) 100%);
+    background: radial-gradient(circle farthest-corner at 35% 90%, 
+        rgb(254, 197, 100), rgba(0, 0, 0, 0) 50%), radial-gradient(circle farthest-corner at 0 140%, 
+        rgb(254, 197, 100), rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0 -25%, 
+        rgb(82, 88, 207),   rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 20% -50%, 
+        rgb(82, 88, 207),   rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 0, 
+        rgb(137, 61, 194),  rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 60% -20%, 
+        rgb(137, 61, 194),  rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 100% 100%, 
+        rgb(217, 49, 122),  rgba(0, 0, 0, 0)), linear-gradient(
+            rgb(101, 89, 202), 
+            rgb(187, 48, 143) 30%, 
+            rgb(227, 63, 95) 50%, 
+            rgb(247, 118, 56) 70%, 
+            rgb(254, 198, 109) 100%);
+}
+#yokeissa ul li:nth-child(4) a:before{
+    background-color:rgb(85, 172, 238);
+}
+#yokeissa ul li:nth-child(5) a:before{
+    background-color:rgb(0, 123, 181);
+}

@@ -1,0 +1,114 @@
+*{
+margin: 0;
+padding: 0;
+list-style:none;
+box-sizing:border-box;
+font-family: 'Lemonada', cursive;
+}
+body{
+width:100%;
+z-index:-1;
+height:100vh;
+background-image:url(foto.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+}
+nav{
+position:fixed;
+width: 320px;
+height: 100%;
+left: -320px;
+overflow: hidden;
+background: rgb(255, 255, 255);
+transition: .4s;
+}
+nav .yokeissa{
+position: absolute;
+color: rgb(2, 7, 15);
+font-size: 28px;
+font-weight: 600;
+margin: 32px 40px;
+}
+nav label{
+position:absolute;
+right:50px;
+width: 40px;
+height: 40px;
+top:30px;
+padding: 11px;
+color: rgb(14, 84, 88);
+font-size: 16px;
+border: 2px solid;
+border-radius: 50%;
+cursor: pointer;
+transition: .4s;
+}
+nav label:hover {
+background: rgb(70, 124, 173);
+color:rgb(255, 255, 255);
+}
+nav ul{
+position: absolute;
+top:100px;
+}
+nav ul li {
+padding:25px 40px;
+color: rgb(14, 84, 88);
+width: 320px;
+margin-left: -50px;
+opacity: 0;
+cursor: pointer;
+transition: .4s;
+}
+nav ul li:hover { animation:hover .6s;}
+    @keyframes hover {
+    50% { transform: translateX(20px)   scale(1.1);
+    }
+}
+nav ul li i{
+font-size: 24px; 
+}
+nav ul li i a{
+position: absolute;
+font-size: 20px;
+font-weight: 500;
+left: 80px;
+}
+label span{
+position: absolute;
+color: rgb(47, 49, 79);
+border: 2px solid rgba(44, 103, 211, 0.31);
+width: 40px;
+height: 40px;
+top:20px;
+left: 20px;
+border-radius: 50%;
+padding: 9px;
+font-size: 20px;
+cursor: pointer;
+transition: .4s;
+}
+label span:hover {
+color: rgba(243, 243, 245, 0.31);
+background: rgba(28, 91, 209, 0.31);
+}
+input {
+display: none;
+}
+input:checked ~ label span {
+opacity: 0;
+pointer-events: none;
+}
+input:checked ~ nav {left:0;}
+input:checked ~ nav  ul li{
+margin-left: 0;
+opacity: 1;
+}
+input:checked ~  nav ul li :nth-child(1) {transition-delay: 0.2s;}
+input:checked ~  nav ul li :nth-child(2) {transition-delay: 0.4s;}
+input:checked ~  nav ul li :nth-child(3) {transition-delay: 0.6s;}
+input:checked ~  nav ul li :nth-child(4) {transition-delay: 0.8s;}
+input:checked ~  nav ul li :nth-child(5) {transition-delay: 1s;}
+input:checked ~  nav ul li :nth-child(6) {transition-delay: 1.2s;}
+input:checked ~  nav ul li :nth-child(7) {transition-delay: 1.4s;}

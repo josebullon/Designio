@@ -1,0 +1,50 @@
+A
+B
+C
+CH
+D
+E
+F
+G
+H
+I
+J
+K
+L
+LL
+M
+N
+O
+P
+Q
+R
+RR
+S
+T
+U
+V
+W
+X
+Y
+Z
+
+CORRESPONDE AL NÚMERO EJEMPLO: ("1 = A", "3 = C", "6 = E", "9 = H" Y "11 = J")
+
+***SEO***
+---------Menu
+1-AA              INICIO
+2-BB              SERVICIO
+3-CC              CODIGOS
+4-DD              CURSOS
+5-EE              PLANTILLAS
+6-FF              TUTORIALES
+7-GG              PORTAFOLIO
+8-HH              BLOG
+9-II              CONTACTO
+10-JJ              +++++++++                       CATEGORIA                     ("CATEGORIA CODIGO RELOJ") = (10-JJCCRELOJ)
+11-KK              +++++++++                       CODE                      ("COGIGOS RELOJ") = (11-KKCCRELOJ001)
+12-LL              +++++++++DESCARGAS
+13-MM              +++++++++PAGOS
+14-NN              +++++++++MENSAJES
+15-OO              +++++++++FACTURAS
+16-PP              +++++++++TIENDA-ONLINE

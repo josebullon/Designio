@@ -1,0 +1,56 @@
+.dragdv-content{
+    position: relative;
+    transition: .3s;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.8);
+    background: transparent;
+    border-radius: 18px;
+}
+.dragdv-content .gyaraaa-content,
+.dragdv-content:after{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+}
+.dragdv-content:after{
+    content: '';
+    display: block;
+    background: rgb(242, 151, 32,0.5);
+    border: rgb(51, 181, 229);
+    border-radius: 18px;
+    top: 20px;
+    bottom: 20px;
+    opacity: 0;
+    transform: rotate3d(-1,1,0,100deg);
+    transition: .4s;
+}
+.dragdv-content:hover::after{
+    opacity: 0.9;
+    transform: rotate3d(0,0,0,0deg);
+}
+.dragdv-content img{
+    width: 350px;
+    height: 350px;
+    border-radius: 18px;
+}
+.gyaraaa-content{
+    margin-top: 12%;
+    top: 60%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%,-30%);
+    transition: .3s;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.gyaraaa-content h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dragdv-content:hover .gyaraaa-content{
+    opacity: 1;
+    transform: translate(0,-50%);
+    transition-delay: .3s;
+}
+a:link, a:visited, a:active{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+}
